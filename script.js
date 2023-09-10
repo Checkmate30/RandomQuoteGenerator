@@ -8,8 +8,10 @@ function fetchQuote() {
     async function getResult() {
         const response = await fetch(api_call);
         const data = await response.json();
-        divForQuote.innerText = data;
-
+        console.log(data);
+        // const author = data.author;
+        // const receivedQuote = data.quote;
+        divForQuote.innerText = data.quote + ": " + data.author;
     }
     getResult();
 }
