@@ -3,12 +3,13 @@ const generateBtn = document.getElementById('generate-button');
 
 //api call
 function fetchQuote() {
-    const api_call = "";
+    const api_call = "https://dummyjson.com/quotes/random";
 
     async function getResult() {
         const response = await fetch(api_call);
         const data = await response.json();
-        const receivedQuote = "";
+        divForQuote.innerText = data;
 
     }
+    getResult();
 }
