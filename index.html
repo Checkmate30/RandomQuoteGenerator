@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Quote Generator</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <nav id="navbar">
-      <div id="logo">Random Quote Generator</div>
+      <div id="logo">RANDOM QUOTE GENERATOR</div>
       <div id="nav-items">
         <ul id="nav-links">
           <li><a href="#">Home</a></li>
@@ -18,14 +20,17 @@
     </nav>
 
     <section id="main-section">
-      <button id="generate-button" onclick="fetchQuote()">Generate Quote</button>
+      <button id="generate-button" onclick="fetchQuote()">
+        Generate Quote
+      </button>
       <div id="quote-div"></div>
+
+      <a class="twitter-share-button" data-size="large" href="https://twitter.com/intent/tweet" target="_blank">Tweet</a>
     </section>
 
     <!-- <section id="about-section">
         <h3>About</h3>
         <p>The sole purpose of this project is to generate random quotes.</p>
     </section> -->
-
   </body>
 </html>
